@@ -42,9 +42,9 @@ services:
       - '1880:1880'
     user: root:root
     volumes:
-      - ./node_red_data/:/data
+      - ./node-red-data/:/data
 volumes:
   influxdb-storage:
   chronograf-storage:
   grafana-storage:
-  node_red_data:
+  node-red-data:
