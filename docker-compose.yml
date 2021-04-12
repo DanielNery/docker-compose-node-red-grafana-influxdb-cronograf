@@ -36,6 +36,7 @@ services:
     environment:
       - GF_SECURITY_ADMIN_USER=${GRAFANA_USER}
       - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_PASSWORD}
+      - GF_INSTALL_PLUGINS=dalvany-image-panel 2.2.0
   nodered:
     image: nodered/node-red:latest
     ports:
